@@ -683,6 +683,22 @@ video {
   background-image: url('/images/perforce.png');
 }
 
+.bg-\[url\(\'\.\.\/images\/git\.png\'\)\] {
+  background-image: url('../images/git.png');
+}
+
+.bg-\[url\(\'\.\.\/images\/svn\.png\'\)\] {
+  background-image: url('../images/svn.png');
+}
+
+.bg-\[url\(\'\.\.\/images\/mercurial\.jpg\'\)\] {
+  background-image: url('../images/mercurial.jpg');
+}
+
+.bg-\[url\(\'\.\.\/images\/perforce\.png\'\)\] {
+  background-image: url('../images/perforce.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
