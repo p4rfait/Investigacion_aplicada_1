@@ -34,54 +34,67 @@
       <div class="flex w-11/12 max-w-3xl h-full flex-col gap-5">
 
         <div class="flex w-full h-full min-h-80 bg-[url('https://communications.gwu.edu/sites/g/files/zaxdzs5371/files/2023-05/template-resize-video.jpg')] bg-cover bg-center bg-no-repeat rounded-2xl">
-          <div class="flex items-center justify-center w-full">
+          <div class="flex items-center justify-center w-full"> <!--Aquiii-->
+           
             <h2 class="text-4xl">Perforce</h2> <!-- Descripcion breve del tema-->
           </div>
         </div>
 
         <div class="flex bg-zinc-800 rounded-2xl h-full flex-col gap-5 px-8 py-6 text-white">
            
-          <h2 class="font-bold text-orange-500 text-4xl mt-0 leading-10">TITULO EXTENDIDO AQUI</h2> <!-- Version expandida del tema -->
-           <p class="text-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus tempora maiores pariatur sunt molestias nobis, temporibus deleniti doloribus odio, obcaecati praesentium libero unde qui, harum quasi architecto quidem dolorum provident.</p> <!-- Explicacion breve sobre el tema-->
+          <h2 class="font-bold text-orange-500 text-4xl mt-0 leading-10">Perforce</h2> <!-- Version expandida del tema -->
+           <p class="text-base">Perforce Helix Core, a menudo denominado simplemente Perforce, es un sistema de gestión de control de código fuente (SCM) que se utiliza para gestionar y controlar las versiones del código fuente y otros activos de desarrollo.</p> <!-- Explicacion breve sobre el tema-->
 
-           <h2 class="font-bold text-orange-500 text-2xl mt-8">SUBTITULO AQUI</h2> <!-- Subtitulo -->
-           <p class="text-base" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus tempora maiores pariatur sunt molestias nobis, temporibus deleniti doloribus odio, obcaecati praesentium libero unde qui, harum quasi architecto quidem dolorum provident.</p>
-
-           <h2 class="font-bold text-orange-500 text-lg mt-0">SUB-SUBTITULO</h2> <!-- para darle introduccion a cosas como una lista de comando o lista de usos por ejemplo -->
+           <h2 class="font-bold text-orange-500 text-2xl mt-8">Descripcion General</h2> <!-- Subtitulo -->
+           <p class="text-base">Perforce Helix Core es un sistema SCM potente y escalable diseñado para respaldar proyectos de desarrollo a gran escala con funciones avanzadas de control de versiones, capacidades de integración y seguridad sólida.</p>
            <ol class="list-decimal ms-9">
             <li class="my-1 text-base">
-              <strong>Cosa:</strong>
-              Explicacion de tal cosa.
+              <strong>Escalabilidad:</strong>
+              Administra grandes repositorios: adecuado para proyectos con millones de archivos y binarios grandes.
+              Compatibilidad a nivel empresarial: utilizado por grandes organizaciones con equipos de desarrollo extensos.            </li>
+            <li class="my-1 text-base">
+              <strong>Ramificacion y Fusion</strong>
+              Ramificación avanzada: admite estrategias de ramificación complejas.
+Fusión eficiente: herramientas para gestionar y resolver conflictos de manera eficiente.
             </li>
             <li class="my-1 text-base">
-              <strong>Cosa:</strong>
-              Explicacion de tal cosa.
+              <strong>Confirmaciones Atomicas:</strong>
+              Enfoque de todo o nada: garantiza que todos los cambios en una confirmación se apliquen juntos, lo que evita actualizaciones incompletas.
             </li>
             <li class="my-1 text-base">
-              <strong>Cosa:</strong>
-              Explicacion de tal cosa.
+              <strong>Integracion:</strong>
+              Integraciones de herramientas: funciona con herramientas de desarrollo populares, IDE y sistemas CI/CD.
+              Compatibilidad amplia con API: permite integraciones y automatización personalizadas.
+            </li>
+            <li class="my-1 text-base">
+              <strong>Seguridad:</strong>
+              Control de acceso: permisos granulares para proteger repositorios.
+Registros de auditoría: registros detallados de todas las actividades para fines de cumplimiento y auditoría.
             </li>
            </ol>
 
-           <h2 class="font-bold text-orange-500 text-lg mt-0">SUB-SUBTITULO</h2> <!-- para darle introduccion a cosas como una lista de comando o lista de usos por ejemplo -->
+           <h2 class="font-bold text-orange-500 text-lg mt-0">Tambien podemos mencionar comandos Basicos</h2> <!-- para darle introduccion a cosas como una lista de comando o lista de usos por ejemplo -->
            <ul class="list-disc ms-9">
             <li class="my-1 text-base">
-              <strong>Cosa:</strong>
-              Explicacion de tal cosa.
+              <strong>p4 sync:</strong>
+              Sincroniza el espacio de trabajo local con los últimos cambios del depósito.            </li>
+            <li class="my-1 text-base">
+              <strong>p4 add:</strong>
+              Agrega un archivo al deposito.
             </li>
             <li class="my-1 text-base">
-              <strong>Cosa:</strong>
-              Explicacion de tal cosa.
-            </li>
+              <strong>p4 edit:</strong>
+            Abre un archivo existente para editarlo            </li>
             <li class="my-1 text-base">
-              <strong>Cosa:</strong>
-              Explicacion de tal cosa.
-            </li>
+              <strong>p4 submission:</strong>
+            Envia cambios al deposito.          </li>
+            <li class="my-1 text-base">
+              <strong>p4 revert:</strong>
+            Revierte los cambios en el espacio de trabajo local al ultimo estado sincronizado         </li>
           </ul>
 
-          <h2 class="font-bold text-orange-500 text-2xl mt-8">SUBTITULO AQUI</h2> <!-- Subtitulo -->
-          <p class="text-base" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus tempora maiores pariatur sunt molestias nobis, temporibus deleniti doloribus odio, obcaecati praesentium libero unde qui, harum quasi architecto quidem dolorum provident.</p>
 
+          
           <code class="bg-black rounded-md w-full p-2">
             <pre>$ sudo make clean install</pre> <!-- Como usuario regular $ -->
             <pre># make clean install</pre> <!-- Como usuario root # -->
