@@ -655,40 +655,22 @@ video {
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
 
+.bg-orange-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+}
+
+.bg-orange-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-80 {
   --tw-bg-opacity: 0.8;
 }
 
-.bg-\[url\(\'\.\/images\/perforce\.png\'\)\] {
-  background-image: url('./images/perforce.png');
-}
-
-.bg-\[url\(\'\/images\/git\.png\'\)\] {
-  background-image: url('/images/git.png');
-}
-
-.bg-\[url\(\'\/images\/mercurial\.jpg\'\)\] {
-  background-image: url('/images/mercurial.jpg');
-}
-
-.bg-\[url\(\'\/images\/svn\.png\'\)\] {
-  background-image: url('/images/svn.png');
-}
-
-.bg-\[url\(\'https\:\/\/communications\.gwu\.edu\/sites\/g\/files\/zaxdzs5371\/files\/2023-05\/template-resize-video\.jpg\'\)\] {
-  background-image: url('https://communications.gwu.edu/sites/g/files/zaxdzs5371/files/2023-05/template-resize-video.jpg');
-}
-
-.bg-\[url\(\'\/images\/perforce\.png\'\)\] {
-  background-image: url('/images/perforce.png');
-}
-
 .bg-\[url\(\'\.\.\/images\/git\.png\'\)\] {
   background-image: url('../images/git.png');
-}
-
-.bg-\[url\(\'\.\.\/images\/svn\.png\'\)\] {
-  background-image: url('../images/svn.png');
 }
 
 .bg-\[url\(\'\.\.\/images\/mercurial\.jpg\'\)\] {
@@ -697,6 +679,10 @@ video {
 
 .bg-\[url\(\'\.\.\/images\/perforce\.png\'\)\] {
   background-image: url('../images/perforce.png');
+}
+
+.bg-\[url\(\'\.\.\/images\/svn\.png\'\)\] {
+  background-image: url('../images/svn.png');
 }
 
 .bg-cover {
@@ -804,9 +790,24 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-orange-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-orange-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 146 60 / var(--tw-bg-opacity));
 }
 
 .hover\:text-black:hover {
