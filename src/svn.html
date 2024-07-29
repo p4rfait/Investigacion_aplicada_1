@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Template</title>
+  <title>Subversion</title>
   <link href="css/style.css" rel="stylesheet">
-  <!--<link href="css/style2.css" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -15,52 +14,62 @@
       <ul class="flex justify-center py-7 gap-4">
         <li>
           <a href="index.html" class="font-bold py-4 px-6 hover:bg-white hover:text-black rounded-2xl">Git</a>
-        </li> 
+        </li>
         <li>
           <a href="mercurial.html" class="font-bold py-4 px-6 hover:bg-white hover:text-black rounded-2xl">Mercurial</a>
-        </li> 
+        </li>
         <li>
           <a href="#" class="font-bold py-4 px-6 hover:bg-white hover:text-black rounded-2xl">SVN</a>
-        </li> 
+        </li>
         <li>
           <a href="perforce.html" class="font-bold py-4 px-6 hover:bg-white hover:text-black rounded-2xl">Perforce</a>
-        </li> 
+        </li>
       </ul>
-    </nav> 
+    </nav>
   </header>
 
   <main class="flex pt-28 pb-14 w-full bg-neutral-700">
     <div class="flex justify-center w-full gap-14">
       <div class="flex w-11/12 max-w-3xl h-full flex-col gap-5">
 
-        <div class="flex w-full h-full min-h-80 bg-[url('../images/svn.png')] bg-cover bg-center bg-no-repeat rounded-2xl"></div>
+        <div
+          class="flex w-full h-full min-h-80 bg-[url('../images/svn.png')] bg-cover bg-center bg-no-repeat rounded-2xl">
+        </div>
 
         <div class="flex bg-zinc-800 rounded-2xl h-full flex-col gap-5 px-8 py-6 text-white">
-           
-          <h2 class="font-bold text-orange-500 text-4xl mt-0 leading-10">SUBVERSION</h2> <!-- Version expandida del tema -->
-           <p class="text-base">Es una herramienta de control de versiones open source basada en un repositorio cuyo funcionamiento se asemeja enormemente al de un sistema de ficheros. </p> <!-- Explicacion breve sobre el tema-->
 
-           <h2 class="font-bold text-orange-500 text-2xl mt-8">SVN</h2> <!-- Subtitulo -->
-           <p class="text-base" >También conocido como el directorio administrativo de la copia de trabajo. Los archivos en cada directorio administrativo ayudan a Subversion a reconocer qué archivos contienen cambios no publicados y qué archivos están desactualizados con respecto al trabajo hecho por los demás.</p>
+          <h2 class="font-bold text-orange-500 text-4xl mt-0 leading-10">SUBVERSION</h2>
+          <!-- Version expandida del tema -->
+          <p class="text-base">Es una herramienta de control de versiones open source basada en un repositorio cuyo
+            funcionamiento se asemeja enormemente al de un sistema de ficheros. </p>
+          <!-- Explicacion breve sobre el tema-->
 
-           <h2 class="font-bold text-orange-500 text-lg mt-0">La Estructura Habitual Subversion</h2> <!-- para darle introduccion a cosas como una lista de comando o lista de usos por ejemplo -->
-           <ol class="list-decimal ms-9">
+          <h2 class="font-bold text-orange-500 text-2xl mt-8">SVN</h2> <!-- Subtitulo -->
+          <p class="text-base">También conocido como el directorio administrativo de la copia de trabajo. Los archivos
+            en cada directorio administrativo ayudan a Subversion a reconocer qué archivos contienen cambios no
+            publicados y qué archivos están desactualizados con respecto al trabajo hecho por los demás.</p>
+
+          <h2 class="font-bold text-orange-500 text-lg mt-0">La Estructura Habitual Subversion</h2>
+          <!-- para darle introduccion a cosas como una lista de comando o lista de usos por ejemplo -->
+          <ol class="list-decimal ms-9">
             <li class="my-1 text-base">
               <strong>Trunk</strong>
               Rama de desarrollo principal.
             </li>
             <li class="my-1 text-base">
               <strong>Tags</strong>
-              Rama de gestión de versiones. Reservado para versiones cerradas, por tanto no se desarrollará sobre esta rama.
+              Rama de gestión de versiones. Reservado para versiones cerradas, por tanto no se desarrollará sobre esta
+              rama.
             </li>
             <li class="my-1 text-base">
               <strong>Branches</strong>
               Rama con evoluciones paralelas al Trunk
             </li>
-           </ol>
+          </ol>
 
-           <h2 class="font-bold text-orange-500 text-lg mt-0">VENTAJAS</h2> <!-- para darle introduccion a cosas como una lista de comando o lista de usos por ejemplo -->
-           <ul class="list-disc ms-9">
+          <h2 class="font-bold text-orange-500 text-lg mt-0">VENTAJAS</h2>
+          <!-- para darle introduccion a cosas como una lista de comando o lista de usos por ejemplo -->
+          <ul class="list-disc ms-9">
             <li class="my-1 text-base">
               <strong></strong>
               Se sigue la historia de los archivos y directorios a través de copias y renombrados.
@@ -71,7 +80,8 @@
             </li>
             <li class="my-1 text-base">
               <strong></strong>
-              La creación de ramas y etiquetas es una operación más eficiente. Tiene coste de complejidad constante (O(1)) y no lineal (O(n)) como en CVS
+              La creación de ramas y etiquetas es una operación más eficiente. Tiene coste de complejidad constante
+              (O(1)) y no lineal (O(n)) como en CVS
             </li>
           </ul>
 
@@ -79,22 +89,26 @@
           <ul class="list-disc ms-9">
             <li class="my-1 text-base">
               <strong></strong>
-              El manejo de cambio de nombres de archivos no es completo. Lo maneja como la suma de una operación de copia y una de borrado.
+              El manejo de cambio de nombres de archivos no es completo. Lo maneja como la suma de una operación de
+              copia y una de borrado.
             </li>
             <li class="my-1 text-base">
               <strong></strong>
-              No resuelve el problema de aplicar repetidamente parches entre ramas, no facilita llevar la cuenta de qué cambios se han realizado. Esto se resuelve siendo cuidadoso con los mensajes de commit.
+              No resuelve el problema de aplicar repetidamente parches entre ramas, no facilita llevar la cuenta de qué
+              cambios se han realizado. Esto se resuelve siendo cuidadoso con los mensajes de commit.
             </li>
           </ul>
         </div>
-   </div>
-    
+      </div>
+
   </main>
 
   <footer class="bg-zinc-900 text-center">
     <div class="p-7 text-center text-white">
       <span>Sitio web creado por Tomás, Omarvis, Aslly y Ricardo.</span>
-      <p>Todo el contenido está bajo la licencia <a class="hover:underline" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank" rel="noopener noreferrer">Creative Commons BY-NC-SA 4.0</a></p>
+      <p>Todo el contenido está bajo la licencia <a class="hover:underline"
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank"
+          rel="noopener noreferrer">Creative Commons BY-NC-SA 4.0</a></p>
     </div>
   </footer>
 

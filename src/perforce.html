@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Template</title>
+  <title>Perforce</title>
   <link href="css/style.css" rel="stylesheet">
-  <!--<link href="css/style2.css" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -15,47 +14,56 @@
       <ul class="flex justify-center py-7 gap-4">
         <li>
           <a href="index.html" class="font-bold py-4 px-6 hover:bg-white hover:text-black rounded-2xl">Git</a>
-        </li> 
+        </li>
         <li>
           <a href="mercurial.html" class="font-bold py-4 px-6 hover:bg-white hover:text-black rounded-2xl">Mercurial</a>
-        </li> 
+        </li>
         <li>
           <a href="svn.html" class="font-bold py-4 px-6 hover:bg-white hover:text-black rounded-2xl">SVN</a>
-        </li> 
+        </li>
         <li>
           <a href="#" class="font-bold py-4 px-6 hover:bg-white hover:text-black rounded-2xl">Perforce</a>
-        </li> 
+        </li>
       </ul>
-    </nav> 
+    </nav>
   </header>
 
   <main class="flex pt-28 pb-14 w-full bg-neutral-700">
     <div class="flex justify-center w-full gap-14">
       <div class="flex w-11/12 max-w-3xl h-full flex-col gap-5">
 
-        <div class="flex w-full h-full min-h-80 bg-[url('../images/perforce.png')] bg-cover bg-center bg-no-repeat rounded-2xl">
+        <div
+          class="flex w-full h-full min-h-80 bg-[url('../images/perforce.png')] bg-cover bg-center bg-no-repeat rounded-2xl">
         </div>
 
         <div class="flex bg-zinc-800 rounded-2xl h-full flex-col gap-5 px-8 py-6 text-white">
-           
-          <h2 class="font-bold text-orange-500 text-4xl mt-0 leading-10">Perforce</h2> <!-- Version expandida del tema -->
-           <p class="text-base">Perforce Helix Core, a menudo denominado simplemente Perforce, es un sistema de gestión de control de código fuente (SCM) que se utiliza para gestionar y controlar las versiones del código fuente y otros activos de desarrollo.</p> <!-- Explicacion breve sobre el tema-->
 
-           <h2 class="font-bold text-orange-500 text-2xl mt-8">Descripcion General</h2> <!-- Subtitulo -->
-           <p class="text-base">Perforce Helix Core es un sistema SCM potente y escalable diseñado para respaldar proyectos de desarrollo a gran escala con funciones avanzadas de control de versiones, capacidades de integración y seguridad sólida.</p>
-           <ol class="list-decimal ms-9">
+          <h2 class="font-bold text-orange-500 text-4xl mt-0 leading-10">Perforce</h2>
+          <!-- Version expandida del tema -->
+          <p class="text-base">Perforce Helix Core, a menudo denominado simplemente Perforce, es un sistema de gestión
+            de control de código fuente (SCM) que se utiliza para gestionar y controlar las versiones del código fuente
+            y otros activos de desarrollo.</p> <!-- Explicacion breve sobre el tema-->
+
+          <h2 class="font-bold text-orange-500 text-2xl mt-8">Descripcion General</h2> <!-- Subtitulo -->
+          <p class="text-base">Perforce Helix Core es un sistema SCM potente y escalable diseñado para respaldar
+            proyectos de desarrollo a gran escala con funciones avanzadas de control de versiones, capacidades de
+            integración y seguridad sólida.</p>
+          <ol class="list-decimal ms-9">
             <li class="my-1 text-base">
               <strong>Escalabilidad:</strong>
               Administra grandes repositorios: adecuado para proyectos con millones de archivos y binarios grandes.
-              Compatibilidad a nivel empresarial: utilizado por grandes organizaciones con equipos de desarrollo extensos.            </li>
+              Compatibilidad a nivel empresarial: utilizado por grandes organizaciones con equipos de desarrollo
+              extensos.
+            </li>
             <li class="my-1 text-base">
               <strong>Ramificacion y Fusion</strong>
               Ramificación avanzada: admite estrategias de ramificación complejas.
-Fusión eficiente: herramientas para gestionar y resolver conflictos de manera eficiente.
+              Fusión eficiente: herramientas para gestionar y resolver conflictos de manera eficiente.
             </li>
             <li class="my-1 text-base">
               <strong>Confirmaciones Atomicas:</strong>
-              Enfoque de todo o nada: garantiza que todos los cambios en una confirmación se apliquen juntos, lo que evita actualizaciones incompletas.
+              Enfoque de todo o nada: garantiza que todos los cambios en una confirmación se apliquen juntos, lo que
+              evita actualizaciones incompletas.
             </li>
             <li class="my-1 text-base">
               <strong>Integracion:</strong>
@@ -65,38 +73,46 @@ Fusión eficiente: herramientas para gestionar y resolver conflictos de manera e
             <li class="my-1 text-base">
               <strong>Seguridad:</strong>
               Control de acceso: permisos granulares para proteger repositorios.
-Registros de auditoría: registros detallados de todas las actividades para fines de cumplimiento y auditoría.
+              Registros de auditoría: registros detallados de todas las actividades para fines de cumplimiento y
+              auditoría.
             </li>
-           </ol>
+          </ol>
 
-           <h2 class="font-bold text-orange-500 text-lg mt-0">Tambien podemos mencionar comandos Basicos</h2> <!-- para darle introduccion a cosas como una lista de comando o lista de usos por ejemplo -->
-           <ul class="list-disc ms-9">
+          <h2 class="font-bold text-orange-500 text-lg mt-0">Tambien podemos mencionar comandos Basicos</h2>
+          <!-- para darle introduccion a cosas como una lista de comando o lista de usos por ejemplo -->
+          <ul class="list-disc ms-9">
             <li class="my-1 text-base">
               <strong>p4 sync:</strong>
-              Sincroniza el espacio de trabajo local con los últimos cambios del depósito.            </li>
+              Sincroniza el espacio de trabajo local con los últimos cambios del depósito.
+            </li>
             <li class="my-1 text-base">
               <strong>p4 add:</strong>
               Agrega un archivo al deposito.
             </li>
             <li class="my-1 text-base">
               <strong>p4 edit:</strong>
-            Abre un archivo existente para editarlo            </li>
+              Abre un archivo existente para editarlo
+            </li>
             <li class="my-1 text-base">
               <strong>p4 submission:</strong>
-            Envia cambios al deposito.          </li>
+              Envia cambios al deposito.
+            </li>
             <li class="my-1 text-base">
               <strong>p4 revert:</strong>
-            Revierte los cambios en el espacio de trabajo local al ultimo estado sincronizado         </li>
+              Revierte los cambios en el espacio de trabajo local al ultimo estado sincronizado
+            </li>
           </ul>
         </div>
-   </div>
-    
+      </div>
+
   </main>
 
   <footer class="bg-zinc-900 text-center">
     <div class="p-7 text-center text-white">
       <span>Sitio web creado por Tomás, Omarvis, Aslly y Ricardo.</span>
-      <p>Todo el contenido está bajo la licencia <a class="hover:underline" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank" rel="noopener noreferrer">Creative Commons BY-NC-SA 4.0</a></p>
+      <p>Todo el contenido está bajo la licencia <a class="hover:underline"
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank"
+          rel="noopener noreferrer">Creative Commons BY-NC-SA 4.0</a></p>
     </div>
   </footer>
 
