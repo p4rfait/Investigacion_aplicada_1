@@ -17,13 +17,13 @@
           <a href="#" class="font-bold py-4 px-6 hover:bg-white hover:text-black rounded-2xl">Git</a>
         </li> 
         <li>
-          <a href="#" class="font-bold py-4 px-6 hover:bg-white hover:text-black rounded-2xl">Subversion</a>
+          <a href="mercurial.html" class="font-bold py-4 px-6 hover:bg-white hover:text-black rounded-2xl">Mercurial</a>
         </li> 
         <li>
-          <a href="#" class="font-bold py-4 px-6 hover:bg-white hover:text-black rounded-2xl">SVN</a>
+          <a href="svn.html" class="font-bold py-4 px-6 hover:bg-white hover:text-black rounded-2xl">SVN</a>
         </li> 
         <li>
-          <a href="#" class="font-bold py-4 px-6 hover:bg-white hover:text-black rounded-2xl">Perforce</a>
+          <a href="perforce.html" class="font-bold py-4 px-6 hover:bg-white hover:text-black rounded-2xl">Perforce</a>
         </li> 
       </ul>
     </nav> 
@@ -33,63 +33,58 @@
     <div class="flex justify-center w-full gap-14">
       <div class="flex w-11/12 max-w-3xl h-full flex-col gap-5">
 
-        <div class="flex w-full h-full min-h-80 bg-[url('https://communications.gwu.edu/sites/g/files/zaxdzs5371/files/2023-05/template-resize-video.jpg')] bg-cover bg-center bg-no-repeat rounded-2xl">
-          <div class="flex items-center justify-center w-full">
-            <h2 class="text-4xl">TITULO AQUI</h2> <!-- Descripcion breve del tema-->
-          </div>
+        <div class="flex w-full h-full min-h-80 bg-[url('/images/git.png')] bg-cover bg-center bg-no-repeat rounded-2xl">
         </div>
 
         <div class="flex bg-zinc-800 rounded-2xl h-full flex-col gap-5 px-8 py-6 text-white">
            
-          <h2 class="font-bold text-orange-500 text-4xl mt-0 leading-10">TITULO EXTENDIDO AQUI</h2> <!-- Version expandida del tema -->
-           <p class="text-base">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus tempora maiores pariatur sunt molestias nobis, temporibus deleniti doloribus odio, obcaecati praesentium libero unde qui, harum quasi architecto quidem dolorum provident.</p> <!-- Explicacion breve sobre el tema-->
-
-           <h2 class="font-bold text-orange-500 text-2xl mt-8">SUBTITULO AQUI</h2> <!-- Subtitulo -->
-           <p class="text-base" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus tempora maiores pariatur sunt molestias nobis, temporibus deleniti doloribus odio, obcaecati praesentium libero unde qui, harum quasi architecto quidem dolorum provident.</p>
-
-           <h2 class="font-bold text-orange-500 text-lg mt-0">SUB-SUBTITULO</h2> <!-- para darle introduccion a cosas como una lista de comando o lista de usos por ejemplo -->
+          <h2 class="font-bold text-orange-500 text-4xl mt-0 leading-10">Que es git?</h2>
+           <p class="text-base">Git es una herramienta distribuida de gestión de código fuente y control de revisiones.</p>
+           <p class="text-base">Git fue creado por Linus Torvalds para su uso en el desarrollo del kernel de Linux y otros proyectos de código abierto. Según una charla que dio para Google, estaba buscando un Source Control Management (SCM) que cumpliera tres criterios: </p>
            <ol class="list-decimal ms-9">
             <li class="my-1 text-base">
-              <strong>Cosa:</strong>
-              Explicacion de tal cosa.
+              Ser distribuido.
             </li>
             <li class="my-1 text-base">
-              <strong>Cosa:</strong>
-              Explicacion de tal cosa.
+              Ser rápido.
             </li>
             <li class="my-1 text-base">
-              <strong>Cosa:</strong>
-              Explicacion de tal cosa.
+              Generará exactamente lo que se ingresó, o se imprimirá un error.
             </li>
            </ol>
+           <p class="text-base">Este artículo cubrirá los primeros pasos con Git y su uso general.</p>
 
-           <h2 class="font-bold text-orange-500 text-lg mt-0">SUB-SUBTITULO</h2> <!-- para darle introduccion a cosas como una lista de comando o lista de usos por ejemplo -->
-           <ul class="list-disc ms-9">
-            <li class="my-1 text-base">
-              <strong>Cosa:</strong>
-              Explicacion de tal cosa.
-            </li>
-            <li class="my-1 text-base">
-              <strong>Cosa:</strong>
-              Explicacion de tal cosa.
-            </li>
-            <li class="my-1 text-base">
-              <strong>Cosa:</strong>
-              Explicacion de tal cosa.
-            </li>
-          </ul>
-
-          <h2 class="font-bold text-orange-500 text-2xl mt-8">SUBTITULO AQUI</h2> <!-- Subtitulo -->
-          <p class="text-base" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus tempora maiores pariatur sunt molestias nobis, temporibus deleniti doloribus odio, obcaecati praesentium libero unde qui, harum quasi architecto quidem dolorum provident.</p>
+           <h2 class="font-bold text-orange-500 text-2xl mt-8">Configuración</h2>
+           <p class="text-base" >Antes de contribuir a un proyecto, es imperativo establecer un nombre de usuario y un correo electrónico para cada usuario. Sustituya las referencias a "Larry" entre corchetes (corchetes y todo lo que hay entremedio, pero deje las comillas) en el siguiente ejemplo por un nombre de usuario personal y una dirección de correo electrónico:</p>
 
           <code class="bg-black rounded-md w-full p-2">
-            <pre>$ sudo make clean install</pre> <!-- Como usuario regular $ -->
-            <pre># make clean install</pre> <!-- Como usuario root # -->
+            <pre>user $ git config --global user.email "&lt;larry@gentoo.org&gt;"</pre>
+            <pre>user $ git config --global user.name "&lt;Larry the cow&gt;" </pre>
           </code>
-          <div class="flex gap-4 bg-zinc-800 rounded-2xl h-full gap-col text-white">
-            <!-- Cuadros de Imagenes -->
-            <div class="flex w-full h-200 min-h-80 bg-[url('https://communications.gwu.edu/sites/g/files/zaxdzs5371/files/2023-05/template-resize-video.jpg')] bg-cover bg-center bg-no-repeat rounded-2xl"></div>
-          </div>
+
+          <h2 class="font-bold text-orange-500 text-2xl mt-8">Local</h2>
+          <p class="text-base">Si solo habrá un usuario del proyecto, o al crear algo que se compartirá de forma distribuida, comience en la estación de trabajo local.</p>
+          <p class="text-base">Si la intención es tener un servidor central que todos usen como servidor "oficial" (por ejemplo, GitHub), entonces podría ser más fácil crear un repositorio vacío allí.</p>
+          <p class="text-base">La siguiente lista de comandos describirá cómo crear un repositorio en una estación de trabajo:</p>
+          <code class="bg-black rounded-md w-full p-2">
+            <pre>user $ cd ~/src</pre>
+            <pre>user $ mkdir hello</pre>
+            <pre>user $ cd hello</pre>
+            <pre>user $ touch readme.txt</pre>
+            <pre>user $ git init</pre>
+          </code>
+          <p class="text-base">El repositorio local ya ha sido creado.</p>
+          <p class="text-base">Hagamos algunas ediciones:</p>
+          <code class="bg-black rounded-md w-full p-2">
+            <pre>user $ echo "Hello, world!" >> readme.txt</pre>
+          </code>
+          <p class="text-base">
+            El nuevo archivo <strong class="text-blue-200">readme.txt</strong> debe agregarse (prepararse) antes de poder incluirse en el repositorio de git. Utilice los siguientes comandos para preparar el archivo y realizar la confirmación: 
+          </p>
+          <code class="bg-black rounded-md w-full p-2">
+            <pre>user $ git add readme.txt </pre>
+            <pre>user $ git commit -m "Added text to readme.txt" </pre>
+          </code>
         </div>
    </div>
     
