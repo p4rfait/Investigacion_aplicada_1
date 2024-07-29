@@ -64,11 +64,14 @@
             correo electrónico para cada usuario. Sustituya las referencias a "Larry" entre corchetes (corchetes y todo
             lo que hay entremedio, pero deje las comillas) en el siguiente ejemplo por un nombre de usuario personal y
             una dirección de correo electrónico:</p>
-          <code class="bg-black rounded-md w-full p-2">
-            <pre>user $ git config --global user.email "&lt;larry@gentoo.org&gt;"</pre>
-            <pre>user $ git config --global user.name "&lt;Larry the cow&gt;" </pre>
-          </code>
 
+          <code id="code1" class="bg-black rounded-md w-full p-2">
+            <pre>git config --global user.email "&lt;larry@gentoo.org&gt;"</pre>
+            <pre>git config --global user.name "&lt;Larry the cow&gt;" </pre>
+          </code>
+          <button id="button1" onclick="CopyToClipboard('code1')"
+            class="text-sm text-neutral-400 hover:text-neutral-200 hover:underline text-right leading-3">Click
+            para copiar</button>
           <h2 class="font-bold text-orange-500 text-2xl mt-8">Local</h2>
           <p class="text-base">Si solo habrá un usuario del proyecto, o al crear algo que se compartirá de forma
             distribuida, comience en la estación de trabajo local.</p>
@@ -76,27 +79,36 @@
             ejemplo, GitHub), entonces podría ser más fácil crear un repositorio vacío allí.</p>
           <p class="text-base">La siguiente lista de comandos describirá cómo crear un repositorio en una estación de
             trabajo:</p>
-          <code class="bg-black rounded-md w-full p-2">
-            <pre>user $ cd ~/src</pre>
-            <pre>user $ mkdir hello</pre>
-            <pre>user $ cd hello</pre>
-            <pre>user $ touch readme.txt</pre>
-            <pre>user $ git init</pre>
+          <code id="code2" class="bg-black rounded-md w-full p-2">
+            <pre>cd ~/src</pre>
+            <pre>mkdir hello</pre>
+            <pre>cd hello</pre>
+            <pre>touch readme.txt</pre>
+            <pre>git init</pre>
           </code>
+          <button id="button2" onclick="CopyToClipboard('code2')"
+            class="text-sm text-neutral-400 hover:text-neutral-200 hover:underline text-right leading-3">Click
+            para copiar</button>
           <p class="text-base">El repositorio local ya ha sido creado.</p>
           <p class="text-base">Hagamos algunas ediciones:</p>
-          <code class="bg-black rounded-md w-full p-2">
-            <pre>user $ echo "Hello, world!" >> readme.txt</pre>
+          <code id="code3" class="bg-black rounded-md w-full p-2">
+            <pre>echo "Hello, world!" >> readme.txt</pre>
           </code>
+          <button id="button3" onclick="CopyToClipboard('code3')"
+            class="text-sm text-neutral-400 hover:text-neutral-200 hover:underline text-right leading-3">Click
+            para copiar</button>
           <p class="text-base">
             El nuevo archivo <strong class="text-blue-200">readme.txt</strong> debe agregarse (prepararse) antes de
             poder incluirse en el repositorio de git. Utilice los siguientes comandos para preparar el archivo y
             realizar la confirmación:
           </p>
-          <code class="bg-black rounded-md w-full p-2">
-            <pre>user $ git add readme.txt </pre>
-            <pre>user $ git commit -m "Added text to readme.txt" </pre>
+          <code id="code4" class="bg-black rounded-md w-full p-2">
+            <pre>git add readme.txt </pre>
+            <pre>git commit -m "Added text to readme.txt" </pre>
           </code>
+          <button id="button4" onclick="CopyToClipboard('code4')"
+            class="text-sm text-neutral-400 hover:text-neutral-200 hover:underline text-right leading-3">Click
+            para copiar</button>
 
         </div>
       </div>
@@ -113,5 +125,7 @@
   </footer>
 
 </body>
+
+<script src="js/copy.js"></script>
 
 </html>
